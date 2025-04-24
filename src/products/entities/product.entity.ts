@@ -25,4 +25,7 @@ export class Product {
 
   @ManyToOne(() => Category) //la opción de eager como true, nos devuelve el producto con la relacion que en este caso es la categoria
   category: Category;
+
+  @Column({ type: 'int' })
+  categoryId: number;
 }
