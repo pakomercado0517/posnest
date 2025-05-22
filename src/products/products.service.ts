@@ -85,6 +85,6 @@ export class ProductsService {
 
   async remove(id: number) {
     await this.productRepository.delete(id);
-    return `Producto con el ID ${id} eliminado`;
+    return { message: `Producto con el ID ${id} eliminado` };
   }
 }
