@@ -14,4 +14,5 @@ export const typeormConfig = (
   logging: false,
   entities: [join(`${__dirname}../../**/*.entity{.ts,.js}`)],
   synchronize: true,
+  name: 'default',
 });
