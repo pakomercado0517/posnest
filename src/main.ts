@@ -18,8 +18,8 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '../public'));
   app.enableCors({
     origin: [
-      'https://posnext.vercel.app/',
-      'https://posnext-pakomercado0517s-projects.vercel.app/',
+      'https://posnext.vercel.app',
+      'https://posnext-pakomercado0517s-projects.vercel.app',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   });
