@@ -16,6 +16,10 @@ async function bootstrap() {
     }),
   );
   app.useStaticAssets(join(__dirname, '../public'));
+  app.enableCors({
+    origin: 'https://posnext.vercel.app/',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  });
   await app.listen(process.env.PORT ?? 3000);
 }
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
